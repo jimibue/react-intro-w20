@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+// default export doesn't {}
+// import Counter from "./Counter";
+
+// //  general export does {}
+// import { sayHello, sayHello1 } from "./Counter";
+
+import Counter, { sayHello, sayHello1 } from "./Counter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
     </div>
   );
 }
