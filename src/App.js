@@ -9,14 +9,16 @@ import "./App.css";
 
 import Counter, { sayHello, sayHello1 } from "./Counter";
 import CounterFunc from "./CounterFunc";
+import Todos from "./Todos";
 
 function App() {
   return (
     <div className="App">
-      <CounterFunc tacoo="functional component 1" startCount={10} />
+      {/* <CounterFunc tacoo="functional component 1" startCount={10} />
       <Counter taco="Counter 1" startCount={10} />
       <Counter taco="Counter 2" />
-      <Counter taco="Counter 3" whatEver="yo" />
+      <Counter taco="Counter 3" whatEver="yo" /> */}
+      <Todos />
     </div>
   );
 }

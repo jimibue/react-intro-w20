@@ -22,12 +22,18 @@ import React, { useState } from "react";
 
 const CounterFunc = ({ startCounter, tacoo }) => {
   const [count, setCount] = useState(startCounter ? startCounter : 0);
+
+  const dec = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div>
       <h1>{tacoo}</h1>
       <p>count: {count}</p>
       <p onClick={() => setCount(count + 1)}>add</p>
       <p onClick={() => setCount(count - 1)}>minus</p>
+      <p onClick={dec}>minus</p>
     </div>
   );
 };
