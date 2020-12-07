@@ -8,11 +8,15 @@ import "./App.css";
 // import { sayHello, sayHello1 } from "./Counter";
 
 import Counter, { sayHello, sayHello1 } from "./Counter";
+import CounterFunc from "./CounterFunc";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <CounterFunc tacoo="functional component 1" startCount={10} />
+      <Counter taco="Counter 1" startCount={10} />
+      <Counter taco="Counter 2" />
+      <Counter taco="Counter 3" whatEver="yo" />
     </div>
   );
 }

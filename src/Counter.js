@@ -32,8 +32,8 @@ class Counter extends React.Component {
 
   // es6 class property
   state = {
-    count: 0,
-    message: "Counter Demo",
+    // we will look later
+    count: this.props.startCount ? this.props.startCount : 0,
     arr: [],
   };
 
@@ -55,7 +55,10 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.state.message}</h1>
+        <h1>
+          {this.props.taco}
+          <span>{this.props.whatEver}</span>
+        </h1>
         <p>{this.state.count}</p>
         <div>
           <p onClick={this.inc}>add 1</p>
